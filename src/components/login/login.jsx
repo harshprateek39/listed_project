@@ -12,9 +12,10 @@ const App = () => {
       signInWithPopup(auth, provider).then ((result) => {
           setValue(result.user.email)
           localStorage.setItem('email', result.user.email);
-        login();
+        
         
       })
+    login();
   }
 
   useEffect(() => {
