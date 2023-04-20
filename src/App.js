@@ -19,6 +19,7 @@ function App() {
         <Route path='/home' element={
           <div className="appBox"><Menu active={active}/>
     <Admin click={handleClick}  active={active}/></div> }/>
+    <Route path="*" element={<Login />} />
         
       </Routes>
       </BrowserRouter> 
