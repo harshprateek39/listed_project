@@ -1,0 +1,2 @@
+.chart{display: grid; grid-template-columns: 1fr; background-color: rgb(255, 255, 255); height: 200px;
+border-radius: 30px; padding: 20px; }

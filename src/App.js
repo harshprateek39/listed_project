@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
-
+import Menu from './components/menu/menu.jsx'
+import Admin from './components/admin/admin.jsx';
+import Login from './components/login/login';
+import { BrowserRouter, Link, Navigate, Route, Routes } from "react-router-dom"
 function App() {
+  const [active, SetActive]=useState(false);
+  const handleClick= ()=>{ SetActive(!active);}
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div className="App">
+    
+    
+    {/* </div> */}
+     <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Login/>}/>
+        <Route path='/home' element={
+          <div className="appBox"><Menu active={active}/>
+    <Admin click={handleClick}  active={active}/></div> }/>
+        
+      </Routes>
+      </BrowserRouter> 
     </div>
   );
 }

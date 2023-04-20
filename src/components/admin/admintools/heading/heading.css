@@ -1,0 +1,14 @@
+.heading{ display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 0px; }
+.logo{font-weight: 700; font-size: 20px; align-self: center;}
+.srch{ display: flex; flex-direction: row;  justify-content: space-around; gap: 1rem; align-items: center; }
+.inputBox{background-color: white; border-radius: 10px; padding-left: 1rem; padding-right: 0.5rem; display: flex; flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+}
+.navBtn{font-size: 30px; z-index: 10; }
+.active1{color: white; position: fixed;}
+:hover.navBtn{cursor: pointer;}
+.input{ border-style: none; width: 90px; height: 20px; outline: none;}
+.pic{width: 25px; height: 25px;}
+.picture{width: 20px; border-radius: 100%; height: 20px;}
+.toggle{display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 0px;}

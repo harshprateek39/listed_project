@@ -1,0 +1,5 @@
+.smallbox{background-color: rgb(243, 208, 208);  border-radius: 20px;  padding: 20px; display: flex; flex-direction: row; justify-content: space-between;}
+.data{align-self: flex-end;}
+.icon{font-weight: 400; font-size: 20px;}
+.title{margin: 0px; font-size: 10px; font-weight: 500;}
+.value{margin: 0px; font-weight: bold;}
