@@ -9,13 +9,14 @@ const App = () => {
   const [value, setValue] = useState('')
   console.log("vaue is",value);
   const handleClick = () => { 
+     login();
       signInWithPopup(auth, provider).then ((result) => {
           setValue(result.user.email)
           localStorage.setItem('email', result.user.email);
         
         
       })
-    login();
+   
   }
 
   useEffect(() => {
